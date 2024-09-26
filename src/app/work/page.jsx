@@ -18,33 +18,36 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Frontend",
     title: "project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.  ",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
+    description:
+      "Developed a dynamic website for a coffee export company, optimizing global reach and user engagement. Contact me for a tailored web solution!",
+    stack: [{ name: "React.js" }, { name: "Css 3" }],
+    image: "/assets/work/photo7.png",
     live: "",
     github: "",
   },
   {
     num: "02",
-    category: "frontend",
+    category: "Frontend",
     title: "project 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.  ",
+    description:
+      "Explore my sample E-commerce website to see a creative, user-friendly design that showcases my web development skills. Contact me for custom solutions tailored to your business!",
     stack: [{ name: "React.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    image: "/assets/work/photo6.png",
+    live: "https://e-commerce-frontend-eight-black.vercel.app/",
+    github: "https://github.com/Ziyin00/E-commerceFrontend.git",
   },
   {
     num: "03",
-    category: "frontend",
+    category: "Frontend",
     title: "project 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.  ",
-    stack: [{ name: "Naxt.js" }, { name: "Tailwind.css 3" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    description:
+      "Explore my sample fitness club website design, built with user-friendly navigation, responsive layouts, and modern aesthetics—perfect for your gym's online presence! ",
+    stack: [{ name: "Naxt.js" }, { name: "Tailwind.css " }],
+    image: "/assets/work/phtot5.png",
+    live: "https://z-fitness00.netlify.app",
+    github: "https://github.com/Ziyin00/Z-gym.git",
   },
 ];
 const Work = () => {
@@ -61,14 +64,14 @@ const Work = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex flex-col justify-center pt-4 lg:px-0 "
+      className="min-h-[80vh] flex flex-col justify-center px-4 lg:px-0 "
     >
       <div className="container max-auto">
         <div className="flex flex-col lg:flex-row lg:gap-[30px]">
           <div className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between order-2 lg:order-none">
             <div className="flex flex-col gap-[10px] ">
               <div className="group">
-                <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+                <div className="font-extrabold leading-none text-transparent text-8xl text-outline">
                   {project.num}
                 </div>
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent-DEFUALT transition-all duration-500 capitalize">
@@ -92,7 +95,7 @@ const Work = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent-DEFUALT transition-all" />
+                        <BsArrowUpRight className="text-3xl text-white transition-all group-hover:text-accent-DEFUALT" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live Project</p>
@@ -104,7 +107,7 @@ const Work = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent-DEFUALT transition-all" />
+                        <BsGithub className="text-3xl text-white transition-all group-hover:text-accent-DEFUALT" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Github repository</p>
@@ -126,7 +129,7 @@ const Work = () => {
                 return (
                   <SwiperSlide key={index}>
                     <div className="h-[400px] relative group flex justify-center items-center bg-pink-50/20">
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      <div className="absolute top-0 bottom-0 z-10 w-full h-full bg-black/10"></div>
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
