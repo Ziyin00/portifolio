@@ -18,7 +18,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "1+ Year",
+      fieldValue: "2 Year",
     },
     {
       fieldName: "Email",
@@ -82,6 +82,11 @@ const education = {
       institution: "Jimma University",
       position: "Student in Associate with Computer Science",
       duration: "2023-present",
+    },
+    {
+      institution: "udacity",
+      position: "Web development and Application development",
+      duration: "2024",
     },
   ],
 };

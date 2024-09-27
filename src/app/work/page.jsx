@@ -18,8 +18,9 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+
     category: "Frontend",
-    title: "project 1",
+    title: "Suza Coffee Export ",
     description:
       "Developed a dynamic website for a coffee export company, optimizing global reach and user engagement. Contact me for a tailored web solution!",
     stack: [{ name: "React.js" }, { name: "Css 3" }],
@@ -30,7 +31,7 @@ const projects = [
   {
     num: "02",
     category: "Frontend",
-    title: "project 2",
+    title: "Z-Shop ",
     description:
       "Explore my sample E-commerce website to see a creative, user-friendly design that showcases my web development skills. Contact me for custom solutions tailored to your business!",
     stack: [{ name: "React.js" }, { name: "Tailwind.css" }],
@@ -41,7 +42,7 @@ const projects = [
   {
     num: "03",
     category: "Frontend",
-    title: "project 3",
+    title: "Z-Fitness Club",
     description:
       "Explore my sample fitness club website design, built with user-friendly navigation, responsive layouts, and modern aesthetics—perfect for your gym's online presence! ",
     stack: [{ name: "Naxt.js" }, { name: "Tailwind.css " }],
@@ -74,8 +75,9 @@ const Work = () => {
                 <div className="font-extrabold leading-none text-transparent text-8xl text-outline">
                   {project.num}
                 </div>
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent-DEFUALT transition-all duration-500 capitalize">
-                  {project.category} project{" "}
+                <p className="text-white/80">{project.category}</p>
+                <h2 className="text-[42px] font-bold leading-none text-white tracking-tighter group-hover:text-accent-DEFUALT transition-all duration-500 capitalize">
+                  {project.title}
                 </h2>
                 <p className="text-white/60">{project.description}</p>
                 <ul className="flex gap-4 ">
