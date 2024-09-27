@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
@@ -28,14 +29,16 @@ const Home = () => {
                 size="lg"
                 className="flex items-center gap-2 uppercase"
               >
-                <a
-                  download
+                <Link
                   href="/assets/Black Modern Professional Resume.pdf"
+                  target="_blank"
+                  alt="my cv"
+                  rel="noopener noreferrer"
                   className="flex gap-2 items-center"
                 >
                   <span>Download CV</span>
                   <FiDownload />
-                </a>
+                </Link>
               </Button>
               <div className="mb-8 lg:mb-0">
                 <Social
