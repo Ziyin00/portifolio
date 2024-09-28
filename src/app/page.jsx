@@ -30,11 +30,11 @@ const Home = () => {
                 className="flex items-center gap-2 uppercase"
               >
                 <Link
-                  href="/assets/Black Modern Professional Resume.pdf"
+                  href="/public/assets/Black Modern Professional Resume (2).pdf"
                   target="_blank"
                   alt="my cv"
                   rel="noopener noreferrer"
-                  className="flex gap-2 items-center"
+                  className="flex items-center gap-2"
                 >
                   <span>Download CV</span>
                   <FiDownload />
